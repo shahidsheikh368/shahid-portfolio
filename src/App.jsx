@@ -111,6 +111,7 @@ export default function App() {
   const [theme, setTheme] = useState(themeOptions.dark);
   const [typedText, setTypedText] = useState("");
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
@@ -152,6 +153,7 @@ export default function App() {
       } else {
         navbar?.classList.remove("navbar--scrolled");
       }
+      setShowBackToTop(window.scrollY > 300);
     };
     window.addEventListener("scroll", handleScroll);
     handleScroll();
@@ -179,9 +181,13 @@ export default function App() {
       prev === themeOptions.dark ? themeOptions.light : themeOptions.dark
     );
 
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const aboutStats = useMemo(
     () => [
-      { label: "Projects Delivered", value: "28+" },
+      { label: "Projects ", value: "28+" },
       { label: "Years Learning", value: "1+" },
       { label: "Tech Stack", value: "MERN" }
     ],
@@ -360,7 +366,7 @@ export default function App() {
                 </a>
               ))}
             </div>
-            <a className="btn btn--ghost" href="home">Back to top</a>
+            <a className="btn btn--ghost" href="/home">Back to top</a>
           </div>
         </div>
       </section>
@@ -368,6 +374,15 @@ export default function App() {
       <footer className="footer">
         <p>© 2026 Shahid Sheikh. All rights reserved.</p>
       </footer>
+
+      <button
+        type="button"
+        className={`back-to-top ${showBackToTop ? "is-visible" : ""}`}
+        onClick={handleBackToTop}
+        aria-label="Back to top"
+      >
+        ↑
+      </button>
 
       <ProjectModal project={project} onClose={() => setProject(null)} />
     </div>
