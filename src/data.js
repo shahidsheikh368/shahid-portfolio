@@ -35,7 +35,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "CSS", "LocalStorage"],
-    live: "#",
+    live: "https://to-do-app-eight-sepia.vercel.app/",
     github: "#"
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "CSS Grid"],
-    live: "#",
+    live: "https://image-gallery-seven-gamma.vercel.app/",
     github: "#"
   },
   {
@@ -57,7 +57,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "Tailwind CSS"],
-    live: "#",
+    live: "https://instagram-virid-seven.vercel.app/",
     github: "#"
   },
   {
@@ -68,7 +68,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "JavaScript", "LocalStorage"],
-    live: "#",
+    live: "https://student-record-self.vercel.app/",
     github: "#"
   }
 ];
