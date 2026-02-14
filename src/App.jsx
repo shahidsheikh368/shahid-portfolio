@@ -95,10 +95,10 @@ const ProjectModal = ({ project, onClose }) => {
           ))}
         </div>
         <div className="button-row">
-          <a className="btn btn--primary" href={project.live} target="_blank" rel="noreferrer">
+          <a className="btn btn--primary" href={project.live} target="_blank" rel="noopener noreferrer">
             Live Demo
           </a>
-          <a className="btn btn--ghost" href={project.github} target="_blank" rel="noreferrer">
+          <a className="btn btn--ghost" href={project.github} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </div>
