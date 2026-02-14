@@ -36,7 +36,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "CSS", "LocalStorage"],
     live: "https://to-do-app-eight-sepia.vercel.app/",
-    github: "#"
+    github: "https://github.com/shahidsheikh368/todo-app"
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "CSS Grid"],
     live: "https://image-gallery-seven-gamma.vercel.app/",
-    github: "#"
+    github: "https://github.com/shahidsheikh368/image-gallery"
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "Tailwind CSS"],
     live: "https://instagram-virid-seven.vercel.app/",
-    github: "#"
+    github: "https://github.com/shahidsheikh368/mini-instagram-clone"
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ export const projects = [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
     tech: ["React", "JavaScript", "LocalStorage"],
     live: "https://student-record-self.vercel.app/",
-    github: "#"
+    github: "https://github.com/shahidsheikh368/student-record-system"
   }
 ];
 
