@@ -214,6 +214,8 @@ export default function App() {
           <h1>I am Shahid Sheikh</h1>
           <p className="hero__subtitle">
             <span className="typing">{typedText}</span>
+             
+            {/* <span className="typing">{typesText}</span> */}
             <span className="typing__cursor">|</span>
           </p>
           <div className="button-row">

@@ -231,6 +231,7 @@ textarea {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  margin-top: 20px;
   margin-bottom: 24px;
 }
 
@@ -498,7 +499,7 @@ textarea {
   font-size: 0.9rem;
 }
 
-.skill__bar {
+/* .skill__bar {
   height: 8px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 999px;
@@ -511,7 +512,93 @@ textarea {
   background: linear-gradient(120deg, var(--secondary), var(--accent));
   border-radius: 999px;
   animation: grow 1.6s ease;
+} */
+
+.skill__bar {
+  position: relative;
+  height: 10px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 8px;
+  backdrop-filter: blur(10px);
 }
+
+.skill__bar span {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #7dd3fc,
+    #a78bfa,
+    #f9a8d4,
+    #7dd3fc
+  );
+
+  background-size: 300% 100%;
+
+  animation:
+    skillGrow 1.8s ease forwards,
+    gradientMove 5s linear infinite;
+
+  box-shadow:
+    0 0 10px rgba(125,211,252,0.5),
+    0 0 20px rgba(167,139,250,0.35);
+}
+
+/* moving shine */
+.skill__bar span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: rgba(255,255,255,0.35);
+  filter: blur(4px);
+  transform: skewX(-20deg);
+
+  animation: shine 2.8s infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes skillGrow {
+  from {
+    width: 0;
+  }
+}
+
+.skills-grid .glass-card {
+  transition: all 0.35s ease;
+}
+
+.skills-grid .glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 20px rgba(125,211,252,0.15),
+    0 20px 40px rgba(0,0,0,0.35);
+}
+
 
 .projects-grid {
   display: grid;
