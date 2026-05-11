@@ -705,18 +705,40 @@ textarea:focus {
   margin-bottom: 16px;
 }
 
-.modal__close {
+/* .modal__close {
   position: absolute;
   top: 16px;
   right: 16px;
   border: none;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(52, 38, 38, 0.886);
   color: var(--text);
   padding: 8px 12px;
   border-radius: 12px;
   cursor: pointer;
+} */
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
+.modal__close:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.16);
+}
 .reveal {
   opacity: 0;
   transform: translateY(30px);

@@ -82,7 +82,7 @@ const ProjectModal = ({ project, onClose }) => {
       <div className="modal__backdrop" onClick={onClose} />
       <div className="modal__panel">
         <button className="modal__close" onClick={onClose} type="button">
-          Close
+          ✕
         </button>
         <img src={project.image} alt={project.title} loading="lazy" />
         <h3>{project.title}</h3>
