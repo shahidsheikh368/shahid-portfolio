@@ -187,7 +187,7 @@ export default function App() {
 
   const aboutStats = useMemo(
     () => [
-      { label: "Projects ", value: "28+" },
+      { label: "Projects ", value: "4+" },
       { label: "Years Learning", value: "1+" },
       { label: "Tech Stack", value: "MERN" }
     ],
@@ -242,14 +242,14 @@ export default function App() {
         <div className="section__header" data-reveal>
           <p className="section__eyebrow">About</p>
           <h2>Creating reliable, scalable web experiences</h2>
-          <p>I am Shahid Sheikh, a junior web developer learning the MERN stack.</p>
-          <p>Practicing daily and building small projects to grow fast.</p>
-          <p>Improving React and backend skills with consistent hands-on work.</p>
-          <p>Passionate about growth and looking for an internship or junior role.</p>
+          <p>I’m a MERN stack developer passionate about building </p>
+          <p>responsive and modern web applications. Currently improving</p>
+          <p>my frontend and backend skills through real-world projects </p>
+          <p>and consistent practice.</p>
         </div>
         <div className="about" data-reveal>
           <div className="about__card glass-card" data-reveal>
-            <div className="about__image-wrap">
+            <div className="about__image-wrap ">
               <img
                 src="/profile.jpg"
                 alt="Shahid Sheikh"
@@ -381,7 +381,7 @@ export default function App() {
         onClick={handleBackToTop}
         aria-label="Back to top"
       >
-        ↑
+        
       </button>
 
       <ProjectModal project={project} onClose={() => setProject(null)} />
